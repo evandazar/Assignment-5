@@ -2,10 +2,11 @@
 // containing all the numbers from start up to (and including) end.
 // Example output:
 // console.log(range(1, 10)); // outputs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let numlist = [];
+
 
 const range = function(firstNum, lastNum)
 {
+let numlist = [];
 for(let i = firstNum; i <= lastNum; i++)
 {
     numlist.push(i);
