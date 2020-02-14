@@ -44,7 +44,11 @@ console.log(sum(range(1, 10)));
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
 const reverseArray = function(arraySet)
 {
-    arraySet.reverse();
-    return arraySet
+    let arrayList = [];
+    for (let k = arraySet.length-1; k >= 0; k--)
+    {
+        arrayList.push(arraySet[k]);
+    }
+    return arrayList
 };
 console.log(reverseArray(["A", "B", "C"]));
